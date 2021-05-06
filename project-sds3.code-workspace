@@ -9,5 +9,34 @@
 	],
 	"settings": {
 		"java.configuration.updateBuildConfiguration": "automatic"
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "aws-sam",
+				"request": "direct-invoke",
+				"name": "projeto-sds3:com.devsuperior.dsvendas.services.SaleService::findAll (java11)",
+				"invokeTarget": {
+					"target": "code",
+					"projectRoot": "a:\\DESENVOLVIMENTO\\CURSO\\WEB_JS_REACT_OUTROS\\ws-devsuperior\\projeto-sds3\\backend",
+					"lambdaHandler": "com.devsuperior.dsvendas.services.SaleService::findAll"
+				},
+				"lambda": {
+					"runtime": "java11",
+					"payload": {},
+					"environmentVariables": {}
+				}
+			},
+			{
+				"type": "java",
+				"name": "Spring Boot-DsvendasApplication<dsvendas>",
+				"request": "launch",
+				"cwd": "${workspaceFolder}",
+				"console": "internalConsole",
+				"mainClass": "com.devsuperior.dsvendas.DsvendasApplication",
+				"projectName": "dsvendas",
+				"args": ""
+			}
+		]
 	}
 }
