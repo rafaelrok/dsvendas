@@ -7,5 +7,7 @@
 			"path": "backend"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
 }
